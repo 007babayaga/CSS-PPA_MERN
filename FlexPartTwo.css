@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex-parent{
+    outline: 2px solid red;
+    margin: 20px;
+    display: flex;
+    height: 300px;
+    padding: 20px 20px 20px 20px;
+    align-items: stretch;
+    
+}
+.flex-child{
+    outline: 1px solid blue;
+    align-items: stretch;
+}
+.flex-child{
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.shrinkfaster{
+    flex-grow: 2;
+    order: -1;
+    align-self: flex-end;
+}
+.last{
+    order: -2;
+}
